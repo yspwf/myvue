@@ -30,13 +30,33 @@ module.exports = {
             {
                 test:/\.css$/,
                 //loader:'style-loader!css-loader',
-                use: ['style-loader','css-loader'],
-                // use:[
-                //     {loader:'style-loader'},
-                //     {loader:'css-loader'}
-                // ],
+                //use: ['style-loader','css-loader'],
+                use:[
+                    {loader:'style-loader'},
+                    {loader:'css-loader'}
+                ],
                 exclude:path.resolve(__dirname,'node_modules')
             },
+            {
+                test: /\.scss/,
+                use: [{
+                loader: 'style-loader'
+            }, {
+                loader: 'css-loader'
+            }, {
+                loader: 'sass-loader'
+                }]
+            },
+            {
+                test: /\.less$/,
+                use: [{
+                       loader: "style-loader" 
+                    },{
+                        loader: "css-loader"
+                    },{
+                        loader: "less-loader"
+                    }]
+            }, 
             // {
             //     test:/\.(png|jpg|gif|jpeg|svg)$/,
             //     //loader:'file-loader!url-loader',
@@ -62,9 +82,6 @@ module.exports = {
                 //     }
                 // ]
                 loader:'url-loader',
-                query:{
-                    limit: 3
-                }
             }
         ]
     },

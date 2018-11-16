@@ -13,6 +13,10 @@ import VueTouch from 'vue-touch';
 Vue.use(VueTouch, {name: 'v-touch'});
 
 
+
+
+
+
 /*
 import HOME from './page/home.vue';
 import TRAVEL from './page/travel.vue';
@@ -32,7 +36,7 @@ const SELECT = r => require.ensure([], () => r(require('./page/select.vue')), 's
 const MINE = r => require.ensure([], () => r(require('./page/mine.vue')), 'mine');
 
 const test = r => require.ensure([], () => r(require('./page/test.vue')), 'test');
-
+const swiper = r => require.ensure([], () => r(require('./page/swiper.vue')), 'swiper');
 
 const routes = [
   {
@@ -63,6 +67,11 @@ const routes = [
     path:'/test',
     component: test,
     meta:{index:4}
+  },
+  {
+    path:'/swiper',
+    component: swiper,
+    meta:{index:5}
   }
 ];
 

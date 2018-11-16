@@ -6,27 +6,27 @@
         <div class="catogery">
             <div class="innerlayout">
                 <router-link to="/">
-                    <span><img src="/src/static/travel.png"></span>
+                    <span><img src="../static/travel.png"></span>
                     <span class="title">自然风光</span>
                 </router-link>
                 <router-link to="/">
-                    <span><img src="/src/static/building.png"></span>
+                    <span><img src="../static/building.png"></span>
                     <span class="title">自然风光</span>
                 </router-link>
                 <router-link to="/">
-                    <span><img src="/src/static/travel.png"></span>
+                    <span><img src="../static/travel.png"></span>
                     <span class="title">自然风光</span>
                 </router-link>
                 <router-link to="/">
-                    <span><img src="/src/static/building.png"></span>
+                    <span><img src="../static/building.png"></span>
                     <span class="title">自然风光</span>
                 </router-link>
                 <router-link to="/">
-                    <span><img src="/src/static/travel.png"></span>
+                    <span><img src="../static/travel.png"></span>
                     <span class="title">自然风光</span>
                 </router-link>
                 <router-link to="/">
-                    <span><img src="/src/static/one.png"></span>
+                    <span><img src="../static/one.png"></span>
                     <span class="title">自然风光</span>
                 </router-link>
             </div>
