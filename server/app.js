@@ -49,6 +49,12 @@ const fileupload = new file();
 
 
 
+routers.get('/user/login', async (ctx, next)=>{
+    ctx.body = "login";
+});
+
+
+
 routers.get("/", async (ctx, next)=>{
     ctx.body = "hhhhhhh";
     // let res = await fileupload.upload();
@@ -94,6 +100,6 @@ routers.post("/upload", async (ctx, next)=>{
 app.use(routers.routes()).use(routers.allowedMethods());
 
 
-app.listen("80", ()=>{
+app.listen("8000", ()=>{
     console.log("server is runing ...");
 });
