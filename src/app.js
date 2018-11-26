@@ -62,7 +62,7 @@ const routes = [
   {
     path:'/mine',
     component: MINE,
-    meta:{index:3, requireAuth:true}
+    meta:{index:3}
   },
   {
     path:'/login',

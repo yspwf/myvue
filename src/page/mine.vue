@@ -123,7 +123,7 @@
                 </router-link>
             </div>
         </div>
-        
+        <font></font>
     </div>
     
 </template>
@@ -143,12 +143,11 @@ export default {
 
 <style>
 .banner{
-    height:25rem;
     width:100%;
     background-color: #82cc9c;
 }
 .userheadinfo{
-    height: 18rem;
+    height: 16rem;
     display: flex;
     display: -webkit-flex;
     align-items: flex-end;
@@ -229,13 +228,13 @@ export default {
 .order .orderline .ordertitle h3,.order .orderline .ordertitle a,.service .orderline .ordertitle h3{
     height: 6rem;
     line-height: 6rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
     color:#6f6f6f;
 }
 .order .orderline .ordertitle a{
     color:#848383;
     text-align: right;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .orderstatus{
     width: 90%;
@@ -260,8 +259,9 @@ export default {
 .orderstatus a span{
     text-align: center;
     color:#666;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
+
 .service{
     margin-top:1rem;
 }
@@ -272,12 +272,12 @@ export default {
 }
 
 .service .serverlist a{
-    height: 10rem;
+    height: 8rem;
     width:25%;
     position: relative;
 }
 .service .serverlist .servericon{
-    height: 5.5rem;
+    height: 4.5rem;
     width: 100%;
     display: block;
     background: url('../static/collection.png') no-repeat center 80%;
@@ -300,7 +300,7 @@ export default {
     display: block;
     text-align: center;
     color:#666;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 /*
 .service .serverlist a span{

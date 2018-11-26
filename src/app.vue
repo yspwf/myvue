@@ -8,7 +8,7 @@
         <transition :name="transitionName">
             <router-view></router-view>
         </transition>
-        <font></font>
+        
     </div>
 </template>
 <script>
@@ -119,21 +119,80 @@ img{
 
 #footBtn{
     position: fixed;
-    bottom: 0;
+    bottom: -0.2rem;
     display: flex;
     display: -webkit-flex;
 }
 #footBtn a{
-    width: 25%;
-    height:5rem;
-    line-height: 5rem;
+    width: 27%;
     text-align: center;
     background-color: #fbfbfb;
     font-size:1.5rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+#footBtn a i{
+    display: block;
+    height: 2rem;
+    width: 100%;
+    margin: 1rem 0 0;
+}
+#footBtn a .bgone{
+    background: url('./static/foot/find.png') no-repeat center;
+    background-size: contain;
+}
+#footBtn a .bgtow{
+    background: url('./static/foot/topic.png') no-repeat center;
+    background-size: contain;
+}
+#footBtn a .bgthree{
+    background: url('./static/foot/travel.png') no-repeat center;
+    background-size: contain;
+}
+#footBtn a .bgfour{
+    background: url('./static/foot/mine.png') no-repeat center;
+    background-size: contain;
 }
 
-.router-link-active{
+#footBtn a i img{
+    height: 3.5rem;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+}
+#footBtn a span{
+    line-height: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+}
+
+#footBtn .router-link-active{
     color: #65d889;
 }
+
+#footBtn .router-link-active .bgone {
+    background: url('./static/foot/findsure.png') no-repeat center;
+     background-size: contain;
+}
+
+#footBtn .router-link-active .bgtow {
+    background: url('./static/foot/topicsure.png') no-repeat center;
+     background-size: contain;
+}
+
+
+#footBtn .router-link-active .bgthree {
+    background: url('./static/foot/travlesure.png') no-repeat center;
+     background-size: contain;
+}
+
+#footBtn .router-link-active .bgfour {
+    background: url('./static/foot/minesure.png') no-repeat center;
+     background-size: contain;
+}
+
+
+
 </style>
 

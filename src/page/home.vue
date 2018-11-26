@@ -46,57 +46,28 @@
                     <span>
                         <img src="/src/static/timg.jpg">
                     </span>
-                    <h3>
+                    <div class="tiketinfo">
                         <span class="intro">雪山雪山雪山雪山</span>
                         <span class="price">￥500</span>
-                    </h3>
+                    </div>
                 </router-link>
-                <router-link to="/" class="list">
-                    <span>
-                        <img src="/src/static/house.jpg">
-                    </span>
-                    <h3>
-                        <span class="intro">雪山雪山雪山雪山</span>
-                        <span class="price">￥500</span>
-                    </h3>
-                </router-link>
-
                 <router-link to="/" class="list">
                     <span>
                         <img src="/src/static/timg.jpg">
                     </span>
-                    <h3>
+                    <div class="tiketinfo">
                         <span class="intro">雪山雪山雪山雪山</span>
                         <span class="price">￥500</span>
-                    </h3>
+                    </div>
                 </router-link>
                 <router-link to="/" class="list">
                     <span>
-                        <img src="/src/static/house.jpg">
+                        <img src="/src/static/timg.jpg">
                     </span>
-                    <h3>
+                    <div class="tiketinfo">
                         <span class="intro">雪山雪山雪山雪山</span>
                         <span class="price">￥500</span>
-                    </h3>
-                </router-link>
-
-                <router-link to="/" class="list">
-                    <span>
-                        <img src="/src/static/house.jpg">
-                    </span>
-                    <h3>
-                        <span class="intro">雪山雪山雪山雪山</span>
-                        <span class="price">￥500</span>
-                    </h3>
-                </router-link>
-                <router-link to="/" class="list">
-                    <span>
-                        <img src="/src/static/house.jpg">
-                    </span>
-                    <h3>
-                        <span class="intro">雪山雪山雪山雪山</span>
-                        <span class="price">￥500</span>
-                    </h3>
+                    </div>
                 </router-link>
                
             
@@ -118,20 +89,20 @@
                     <span>
                         <img src="/src/static/house.jpg">
                     </span>
-                    <h3>
+                   <div class="tiketinfo">
                         <span class="intro">雪山雪山雪山雪山</span>
                         <span class="price">￥500</span>
-                    </h3>
+                    </div>
                 </router-link>
 
                 <router-link to="/" class="sentiment">
                     <span>
                         <img src="/src/static/house.jpg">
                     </span>
-                    <h3>
+                   <div class="tiketinfo">
                         <span class="intro">雪山雪山雪山雪山</span>
                         <span class="price">￥500</span>
-                    </h3>
+                    </div>
                 </router-link>
 
                 
@@ -140,7 +111,7 @@
             
             </div>
         </div>
-        
+        <font></font>
     </div>
 </template>
 <script>
@@ -164,8 +135,6 @@ export default {
     background-color: #7dbd75;
 }
 .catogery{
-    width: 96%;
-    padding: 1rem;
     background-color: #fff;
 }
 .catogery .innerlayout{
@@ -206,8 +175,8 @@ export default {
     padding-top: 0;
 }
 .ticket .tickettitle{
-    padding: 0 15% 0 15%;
     width:70%;
+    margin:0 auto;
 }
 .ticket .tiketname{
     width:100%;
@@ -219,7 +188,7 @@ export default {
     height:5rem;
     text-align: center;
     line-height: 5rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #4c4c4c;
     display: flex;
     display: -webkit-flex;
@@ -227,6 +196,7 @@ export default {
 .ticket .tiketname .line{
     height:2.5rem;
     border-bottom: 2px solid #000;
+    width: 50%;
 }
 
 .ticketlist{
@@ -236,31 +206,32 @@ export default {
     flex-wrap: wrap;
 }
 .list{
-    width: 48%;
+    width: 44%;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
     padding-bottom: 1rem;
+    padding: 0.5rem;
 }
 
-.list h3,.sentiment h3{
+.list .tiketinfo,.sentiment .tiketinfo{
     display: flex;
     display: -webkit-flex;
 }
 
 .list .intro,.sentiment .intro{
-    width: 45%;
-    padding: 0.5rem 1rem;
+    width: 80%;
+    padding: 0.5rem;
     color: #666;
 }
 .list .price,.sentiment .price{
     text-align: right;
     color: #f98787;
-    width: 45%;
-    padding: 0.5rem 1rem;
+    width: 20%;
+    padding: 0.5rem;
 }
 .list span img,.sentiment span img{
-    height: 14rem;
+    height: 10rem;
 }
 .sentiment{
     width: 100%;

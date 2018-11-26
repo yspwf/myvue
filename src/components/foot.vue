@@ -1,9 +1,21 @@
 <template>
     <div id="footBtn">
-        <router-link to="/home">精选</router-link>
-        <router-link to="/select">发现</router-link>
-        <router-link to="/travel">出行</router-link>
-        <router-link to="/mine">我的</router-link>
+        <router-link to="/home">
+            <i class="bgone"></i>
+            <span>精选</span>
+        </router-link>
+        <router-link to="/select">
+            <i class="bgtow"></i>
+            <span>发现</span>
+        </router-link>
+        <router-link to="/travel">
+            <i class="bgthree"></i>
+            <span>出行</span>
+        </router-link>
+        <router-link to="/mine">
+            <i class="bgfour"></i>
+            <span>我的</span>
+        </router-link>
     </div>
 </template>
 
