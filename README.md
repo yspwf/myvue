@@ -60,6 +60,7 @@ uglifyjs-webpack-plugin 是用来对js代码进行压缩体积的，在webpack4.
 
 
  webpack 支持vue框架执行
+ 
  cnpm install vue vue-loader vue-template-compiler --save
  
  const VueloaderPlugin = require('vue-loader/lib/plugin);
