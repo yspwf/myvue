@@ -8,15 +8,18 @@ cnpm  install  webpack webpack-cli  webpack-dev-server  --save   webpack打包�
 cnpm install babel-core babel-loader babel-preset-env  --save  
 es6语法转化为es5语法 babel 默认是不进行转换的，需要设置插件，这里通过 presets 设置插件指定代码的转换规则使用片段
 
-...
+
 use:{
+
       loader:'babel-loader',
+      
       oprtions:{
+      
           presets:['env']
+          
       }
  }
- ...
- 
+
  
  原来上面的配置只能转换ES的新语法，对于新的API（Promise、Set、Map 等新增对象，Object.assign、Object.entries等静态方法。）
  却没有作用，需要使用 babel-plugin-transform-runtime
