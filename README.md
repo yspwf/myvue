@@ -58,7 +58,40 @@ uglifyjs-webpack-plugin 是用来对js代码进行压缩体积的，在webpack4.
       ]
  }
 
-cnpm  install vue vue-loader vue-template-complier  --save       webpack打包支持vue文件组件
+
+ webpack 支持vue框架执行
+ cnpm install vue vue-loader vue-template-compiler --save
+ 
+ const VueloaderPlugin = require('vue-loader/lib/plugin);
+ 
+ module:{
+    rules:[
+    
+         {
+         
+              test:/\.vue$/,
+              
+              loader:'vue-loader'
+              
+         }
+      ]
+  },
+  
+  resolve:{
+  
+      alias:{
+      
+           'vue$':'vue/dist/vue.esm.js'
+           
+      }
+   },
+   
+  plugins:[
+  
+      new VueLoaderPlugin();
+      
+  ]
+
 
  webpack打包方式默认是不支持css的，需要使用webpack包来支持 css 解析
 cnpm install style-loader css-loader --save 
