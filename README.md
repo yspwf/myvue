@@ -200,7 +200,31 @@ cnpm install mini-css-extract-plugin --save
 
 cnpm  install koa --save   koa框架
 
+基本使用：
+
+var Koa = require('koa');
+var app = new Koa();
+var port = '';
+app.use(async ctx =>{
+      ctc.body ="hello koa";
+});
+app.listen(port);
+
+
 cnpm  install koa-router --save   koa路由解析组件
+
+var KoaRouter = require('koa-router');
+var router = new KoaRouter();
+router.get("/", async (ctx, next) => {
+      ctx.body = "get 方式请求";
+});
+router.post("/", async (ctx, next) => {
+      ctx.body = "post 方式请求"；
+});
+
+app.use(router.routes()).use(router.allowedMethods());
+app.listen(port);
+
 
 cnpm  install koa-bodyparser --save koa http post方式参数解析
 
