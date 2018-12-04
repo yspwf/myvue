@@ -22,6 +22,12 @@ app.use(cors({
 }));
 
 
+const jwt = require('jsonwebtoken');
+let secret = "yspwf";
+
+
+
+
 
 
 const path = require('path');
@@ -41,26 +47,26 @@ app.use(koaBody({
 
 
 
-
-
-
-const file = require('./file.js');
-const fileupload = new file();
-
-
-
 routers.get('/user/login', async (ctx, next)=>{
-    ctx.body = "login";
+    console.log(ctx.request.query);
+    ctx.body = "33333";
+    // let token = jwt.sign({
+    //     name:'ysp',
+    // },secret,{expiresIn:'2h'});
+
+    // ctx.body = {'token':token, 'error':'', 'success':true};
 });
 
 
 
 routers.get("/", async (ctx, next)=>{
-    ctx.body = "hhhhhhh";
+    
     // let res = await fileupload.upload();
     // console.log(res);
 
 });
+
+
 
 routers.post("/upload", async (ctx, next)=>{
 

@@ -7,6 +7,8 @@ import App from './app.vue';
 
 import axios from 'axios';
 Vue.prototype.axios = axios;
+import qs from 'qs';
+Vue.prototype.$qs = qs;
 
 
 import VueTouch from 'vue-touch';
@@ -62,7 +64,9 @@ const routes = [
   {
     path:'/mine',
     component: MINE,
-    meta:{index:3}
+    meta:{
+      requireAuth: true,
+      index:3}
   },
   {
     path:'/login',

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-
+import axios from 'axios';
 export default {
     data(){
         return {
@@ -20,14 +20,11 @@ export default {
     },
     methods:{
         userlogin:function(){
-            console.log(this.logininfo);
-            this.axios.get('http://127.0.0.1:8000/user/login',{
-                headers:{
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                }
-            }).then((res)=>{
-                console.log(res);
-            });
+            //console.log(this.logininfo);
+            //this.axios.defaults.headers['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
+            axios.get('http://127.0.0.1:8000/user/login?name=33').then((res)=>{
+                            console.log(res);
+                        });
         }
     }
 }
